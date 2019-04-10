@@ -1,0 +1,20 @@
+// ON TRAVAILLE SUR CARD
+// on peut modifier la transition en ms
+// et le rotate en dgré
+
+.card {
+  -webkit-transition: -webkit-transform 600ms ease;
+  transition: -webkit-transform 600ms ease;
+  transition: transform 600ms ease;
+  transition: transform 600ms ease, -webkit-transform 600ms ease;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+
+  &:hover {
+    opacity: 0.8;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+    -webkit-transform: perspective(1000px) rotateY(-10deg);
+            transform: perspective(1000px) rotateY(-10deg);
+    }
+}

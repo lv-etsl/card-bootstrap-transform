@@ -1,0 +1,32 @@
+.card-columns .card:nth-child(even) {
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  -webkit-transform: perspective(1000px);
+  transform: perspective(1000px);
+}
+.card-columns .card:nth-child(even):hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  -webkit-transform: perspective(1000px) rotateY(-10deg);
+  transform: perspective(1000px) rotateY(-10deg);
+}
+.card-columns .card:nth-child(odd) {
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  -webkit-transform: perspective(1000px);
+  transform: perspective(1000px);
+}
+.card-columns .card:nth-child(odd):hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  -webkit-transform: perspective(1000px) rotateY(10deg);
+  transform: perspective(1000px) rotateY(10deg);
+}
+
+/*# sourceMappingURL=main.css.map */
